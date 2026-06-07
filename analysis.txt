@@ -1,0 +1,36 @@
+
+IS 303 - A06: Movie Ratings Data Analysis Summary
+Elise Osmun
+
+
+1. DATASET DESCRIPTION.          
+This analysis utilizes the 'movie_ratings.csv' dataset, which originally contained 50 
+rows. After filtering out missing data during the cleaning process, 47 rows and 6 columns 
+remained for analysis. The dataset captures essential movie metrics, including the title, 
+genre, platform, times watched, numerical rating (on a scale of 1 to 5), and the release 
+year (originally stored as text strings). The data was sourced from the IS 303 course files 
+on Canvas to evaluate how streaming platforms and genres compare in user satisfaction over 
+time.
+
+2. KEY FINDINGS
+Based on the pandas groupby aggregation and the generated line chart, 
+two primary trends emerged:
+- First, the highest-rated genre on average was Musical with a score of 3.90, 
+while Action performed the worst with an average rating of 2.77.
+- Second, comparing platforms revealed that Amazon Prime maintained the highest 
+average user rating (3.26), whereas Netflix unexpectedly performed the worst with a much 
+lower average rating of 2.50.
+- Finally, the 'ratings_over_time.png' chart indicates that average movie ratings 
+fluctuate based on the release year, visualizing the historical shift in content quality 
+across these distribution channels.
+
+3. LIMITATIONS
+While the analysis highlights clear patterns, it has significant limitations. 
+The dataset is relatively small at just 47 rows, which can make historical averages 
+highly volatile; for example, if only one or two movies represent a specific release year, 
+those single ratings heavily skew that year's average on the trend line. Furthermore, 
+the data lacks a 'total vote count' variable, meaning we cannot distinguish between a 
+movie rated 5.0 by one person versus a movie rated 4.5 by thousands. To strengthen these 
+conclusions, future analyses should incorporate larger sample sizes from public databases 
+like IMDb or Kaggle and include user demographic data to control for platform target 
+audiences.
